@@ -1,1 +1,9 @@
+# IntelliJ
 .idea
+
+# Python related
+*.pyc
+**/.pytest_cache
+**/*egg-info
+**/dist
+.coverage

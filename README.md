@@ -1,16 +1,21 @@
 # kc-devops-6-cicd-local-pipelines-instructor-guide 
 
-Materiales para la impartición del módulo "Ciclo de vida de un desarrollo: CI/CD" del bootcamp DevOps de KeepCoding.
+Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from [KeepCoding](https://keepcoding.io/) DevOps bootcamp.
 
-> Parte 1 del módulo: Pipelines locales
+> Part 1 out of 4: Local Pipelines :round_pushpin: 
 
-Este repositorio sirve de guía para la profesora 👩‍💻
+## Requirements :point_down: 
+- make (Check that `make --version` in your terminal outputs something like `GNU Make 4.X [...]`)
+- python3 (Check that `python --version` in your terminal outputs something like `Python 3.X.X`)
+- pip3 (Check that `pip --version` in your terminal outputs something like `pip 20.X.X from [...] (python 3.X)`)
+- docker (Check that  `docker run hello-world` works)
+- A [docker hub](https://hub.docker.com/) account
+- A session on docker hub open in the terminal with `docker login`
+- A [PyPI](https://pypi.org/) account
 
-## Requisitos
-- make  (Aseguraté de que haciendo `make --version` en tu terminal sale algo así `GNU Make 4.X [...]`)
-- python3 (Aseguraté de que haciendo `python --version` en tu terminal sale algo así `Python 3.X.X`)
-- pip3 (Aseguraté de que haciendo `pip --version` en tu terminal sale algo así `pip 20.X.X from [...] (python 3.X)`)
-- docker (Asguraté de que puedes correr `docker run hello-world` sin problemas)
-- Tener cuenta en docker hub https://hub.docker.com/
-- Logarse en DockerHub vía consola de comandos con `docker login`
-- Tener cuenta en https://pypi.org/
+## TODO
+- Script order define
+- Test python app in local
+- Know difference between "build" and "python 3 -m build"
+- Why it doesn't take the pypirc configuration
+- Know if we are going to use PyPI or TestPyPI
