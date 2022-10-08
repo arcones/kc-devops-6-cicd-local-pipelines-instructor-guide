@@ -13,7 +13,7 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 - A session on docker hub open in the terminal with `docker login`
 - A [PyPI](https://pypi.org/) account
 
-## Instructor script
+## Instructor script :shipit:
 1. Create python app & .gitignore
 2. Create unit test and run them with the terminal
 3. Create targets to build the app
