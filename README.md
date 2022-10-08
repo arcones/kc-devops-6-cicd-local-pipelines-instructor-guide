@@ -6,8 +6,8 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 
 ## Requirements :point_down:
 - make (Check that `make --version` in your terminal outputs something like `GNU Make 4.X [...]`)
-- python3 (Check that `python --version` in your terminal outputs something like `Python 3.X.X`)
-- pip3 (Check that `pip --version` in your terminal outputs something like `pip 20.X.X from [...] (python 3.X)`)
+- python3 (Check that `python3 --version` in your terminal outputs something like `Python 3.X.X`)
+- pip3 (Check that `pip3 --version` in your terminal outputs something like `pip 20.X.X from [...] (python 3.X)`)
 - docker (Check that  `docker run hello-world` works)
 - A [docker hub](https://hub.docker.com/) account
 - A session on docker hub open in the terminal with `docker login`
