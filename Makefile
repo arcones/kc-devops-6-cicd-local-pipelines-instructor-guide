@@ -12,7 +12,6 @@ clean:
 	find python-example-app -type d -name '*cache*' -exec rm -rf {} +
 	find python-example-app -type f -name '*pyc' -delete
 	cd python-example-app && rm -rf src/tests/.coverage src/example-app.egg-info dist
-	python3 -m pip uninstall -r python-example-app/requirements.txt -y
 	docker rmi martaarcones/example-app-image --force
 
 build:
@@ -26,6 +25,7 @@ unit-test:
 		coverage run -m pytest -s -v
 
 # [EXPLANATION] Comment exit error codes. Difference between test has failed from pipeline has failed
+# [EXPLANATION] Coverage. Benefits and drawbacks
 coverage:
 	@echo COVERAGE STEP
 	cd python-example-app/src/tests && coverage report -m --fail-under=90
@@ -41,7 +41,7 @@ package:
 	cd python-example-app && python3 -m build
 
 # [MANAGEMENT] First do with user and password and later with pypirc
-# [EXPLANATION] Talk about efficiency improvements in pipelines (balance)
+# [EXPLANATION] Talk about efficiency improvements in pipelines like skip existing, etc (balance)
 publish:
 	@echo PUBLISH STEP
 	cd python-example-app && python3 -m twine upload dist/* --skip-existing --config-file ~/.pypirc

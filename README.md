@@ -14,9 +14,10 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 - A [PyPI](https://pypi.org/) account
 
 ## Instructor script
-1. Create python app
-
-## TODO
-- Script order define
-- Know difference between "build" and "python 3 -m build"
-- Know if we are going to use PyPI or TestPyPI
+1. Create python app & .gitignore
+2. Create unit test and run them with the terminal
+3. Create targets to build the app
+4. Add unit-test and coverage targets
+5. Add version, package and publish targets
+6. Add docker files
+7. Add dockerize, push and integration-test
