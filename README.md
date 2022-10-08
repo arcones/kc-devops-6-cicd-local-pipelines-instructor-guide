@@ -14,12 +14,9 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 - A [PyPI](https://pypi.org/) account
 
 ## Instructor script
-1. 
+1. Create python app
 
 ## TODO
 - Script order define
-- Test python app in local
 - Know difference between "build" and "python 3 -m build"
-- Why it doesn't take the pypirc configuration
 - Know if we are going to use PyPI or TestPyPI
-- Prompt password

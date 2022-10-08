@@ -35,7 +35,7 @@ version:
 	@echo VERSION STEP
 	cd python-example-app && bump
 
-# [EXPLANATION] Difference between "build" and "python 3 -m build"
+# [EXPLANATION] Difference between "build" and "python3 -m build"
 package:
 	@echo PACKAGE STEP
 	cd python-example-app && python3 -m build
