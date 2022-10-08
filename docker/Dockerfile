@@ -1,7 +1,7 @@
 FROM python:3.9.14-slim
 
-RUN pip install example-app-kc
+RUN pip install example-app-kc -U
 
-COPY test.py .
+COPY integration-test.py .
 
-ENTRYPOINT ["python", "test.py"]
+ENTRYPOINT ["python", "integration-test.py"]

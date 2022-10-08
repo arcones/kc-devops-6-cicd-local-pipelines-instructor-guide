@@ -2,10 +2,11 @@
 # [EXPLANATION] makefile explanation. What they are invented for, what they are used for
 # [EXPLANATION] Explain semantics: Target, etc
 
-all: clean build unit-test coverage package publish dockerize push integration-test
-
+all: clean build unit-test coverage version package publish dockerize push integration-test
 
 # [EXPLANATION]: Idempotency and immutability (bullet proof)
+# [EXPLANATION]: Chain targets
+# [MANAGEMENT]: This clean step will be added at the end
 clean:
 	@echo CLEAN STEP
 	find python-example-app -type d -name '*cache*' -exec rm -rf {} +
@@ -29,12 +30,17 @@ coverage:
 	@echo COVERAGE STEP
 	cd python-example-app/src/tests && coverage report -m --fail-under=90
 
+# [EXPLANATION] Semantic versioning.
+version:
+	@echo VERSION STEP
+	cd python-example-app && bump
+
 # [EXPLANATION] Difference between "build" and "python 3 -m build"
 package:
 	@echo PACKAGE STEP
 	cd python-example-app && python3 -m build
 
-# [MANAGEMENT] First do with user and password and later, in favor to automation, place the skip-existing
+# [MANAGEMENT] First do with user and password and later with pypirc
 # [EXPLANATION] Talk about efficiency improvements in pipelines (balance)
 publish:
 	@echo PUBLISH STEP
