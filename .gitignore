@@ -1,6 +1,3 @@
-# IntelliJ
-.idea
-
 # Python related
 *.pyc
 **/.pytest_cache
