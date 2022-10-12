@@ -2,7 +2,7 @@
 
 Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from [KeepCoding](https://keepcoding.io/) DevOps bootcamp.
 
-> Part 1 out of 4: Local Pipelines :round_pushpin: 
+> Part 1 out of 3: Local Pipelines :round_pushpin:
 
 ## Requirements :point_down:
 - make (Check that `make --version` in your terminal outputs something like `GNU Make 4.X [...]`)
