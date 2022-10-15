@@ -1,5 +1,5 @@
-# [EXPLANATION] Dependency management and security risks
-# [EXPLANATION] Possible automations for dependency management
+# [THEORY] Dependency management and security risks
+# [THEORY] Possible automations for dependency management
 coloredlogs==15.0.1
 # [MANAGEMENT] To add the dependencies to the project in one by one fashion
 pytest==7.1.3
