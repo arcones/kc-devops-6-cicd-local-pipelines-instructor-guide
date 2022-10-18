@@ -23,4 +23,4 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 7. Add dockerize, push and integration-test
 
 ## Diagram
-![Diagram](./Diagram.png.png)
+![Diagram](./Diagram.png)
