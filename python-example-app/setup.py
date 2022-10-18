@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as readme:
 
 setuptools.setup(
     name="example-app-kc",
-    version="0.0.19",
+    version="0.0.20",
     author="Marta Arcones",
     author_email="marta.arcones@gmail.com",
     description="A small example package",

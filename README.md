@@ -21,3 +21,6 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 5. Add version, package and publish targets
 6. Add docker files
 7. Add dockerize, push and integration-test
+
+## Diagram
+![Diagram](./Diagram.png.png)
