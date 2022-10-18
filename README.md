@@ -24,3 +24,6 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 
 ## Diagram
 ![Diagram](./Diagram.png)
+
+## TODO
+- [] Playbook to provision Linux workstation (Virtual Box / Vagrant) with python/pip in the last version and the aliases
