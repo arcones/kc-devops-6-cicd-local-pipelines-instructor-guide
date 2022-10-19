@@ -4,3 +4,7 @@
 **/*egg-info
 **/dist
 .coverage
+
+# Personal config
+dockerHubPassword
+.pypirc

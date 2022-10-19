@@ -4,14 +4,31 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 
 > Part 1 out of 3: Local Pipelines :round_pushpin:
 
-## Requirements :point_down:
-- make (Check that `make --version` in your terminal outputs something like `GNU Make 4.X [...]`)
-- python3.8 or higher (Check that `python3 --version` in your terminal outputs something like `Python 3.X.X`)
-- pip3 (Check that `pip3 --version` in your terminal outputs something like `pip 20.X.X from [...] (python 3.X)`)
-- docker (Check that  `docker run hello-world` works)
-- A [docker hub](https://hub.docker.com/) account
-- A session on docker hub open in the terminal with `docker login`
-- A [PyPI](https://pypi.org/) account
+## Requirements :point_down: and how-to run it :gear:
+
+### To run it with docker :whale: (Recommended)
+- `docker` (Check that `docker run hello-world` works)
+- A [docker hub](https://hub.docker.com/) account. Set your password in a file named `dockerHubPassword` in the root of the project
+- A [PyPI](https://pypi.org/) account. Create a [.pypirc file](https://packaging.python.org/en/latest/specifications/pypirc/) in the root of the project with your credentials
+
+To run the project you should do:
+```bash
+    docker build -t dockerized-env-make -f dockerized-env/Dockerfile . && \
+        docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock dockerized-env-make
+```
+
+### To run it in a virtual machine or workstation :computer:
+- `make` (Check that `make --version` in your terminal outputs something like `GNU Make 4.X [...]`)
+- `python3.8` or higher (Check that `python3 --version` in your terminal outputs something like `Python 3.X.X`)
+- `pip3` (Check that `pip3 --version` in your terminal outputs something like `pip 20.X.X from [...] (python 3.X)` which points to previous installation of python3.8)
+- `docker` (Check that  `docker run hello-world` works)
+- A [docker hub](https://hub.docker.com/) account. Set your password in a file named `dockerHubPassword` in the root of the project
+- A [PyPI](https://pypi.org/) account. Create a [.pypirc file](https://packaging.python.org/en/latest/specifications/pypirc/) in the root of the project with your credentials
+
+To run the project you should do:
+```bash
+    make
+```
 
 ## Instructor script :shipit:
 1. Create python app & .gitignore
@@ -24,6 +41,3 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 
 ## Diagram
 ![Diagram](./Diagram.png)
-
-## TODO
- - [ ] Playbook to provision Linux workstation (Virtual Box / Vagrant) with python/pip in the last version and the aliases
