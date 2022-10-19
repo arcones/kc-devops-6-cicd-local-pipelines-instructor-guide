@@ -8,13 +8,13 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 - A [docker hub](https://hub.docker.com/) account.
 - A [PyPI](https://pypi.org/) account. 
 
-### To run it with docker :whale: (Recommended)
+### Prepare environment to run it with docker :whale: (Recommended)
 - `docker` (Check that `docker run hello-world` works)
 
-### To run it in a virtual machine or workstation :computer:
+### Prepare environment to run it in a virtual machine or workstation :computer:
 - `make` (Check that `make --version` in your terminal outputs something like `GNU Make 4.X [...]`)
 - `python3.8` or higher (Check that `python3 --version` in your terminal outputs something like `Python 3.X.X`)
-- `pip3` (Check that `pip3 --version` in your terminal outputs something like `pip 20.X.X from [...] (python 3.X)` which points to previous installation of python3.8)
+- `pip3` (Check that `pip3 --version` in your terminal outputs something like `pip 20.X.X from [...] (python 3.X)` which points to previous installation of `python3.8`)
 - `docker` (Check that  `docker run hello-world` works)
 
 ## How to run it :gear:
@@ -23,7 +23,7 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 1. Set just the password for your dockerhub account in a file named `dockerHubPassword` in the root of the project
 1. Create a [.pypirc file with the standard format](https://packaging.python.org/en/latest/specifications/pypirc/) in the root of the project with your credentials to Pypi
 
-![Configuration Aid](./ConfigurationAid.png)
+![Configuration Aid](./configurationAid.png)
 
 ### To run it with docker :whale: (Recommended)
 ```bash
