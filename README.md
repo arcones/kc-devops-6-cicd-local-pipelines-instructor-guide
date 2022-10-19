@@ -4,28 +4,34 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 
 > Part 1 out of 3: Local Pipelines :round_pushpin:
 
-## Requirements :point_down: and how-to run it :gear:
+## Requirements :point_down:
+- A [docker hub](https://hub.docker.com/) account.
+- A [PyPI](https://pypi.org/) account. 
 
 ### To run it with docker :whale: (Recommended)
 - `docker` (Check that `docker run hello-world` works)
-- A [docker hub](https://hub.docker.com/) account. Set your password in a file named `dockerHubPassword` in the root of the project
-- A [PyPI](https://pypi.org/) account. Create a [.pypirc file](https://packaging.python.org/en/latest/specifications/pypirc/) in the root of the project with your credentials
-
-To run the project you should do:
-```bash
-    docker build -t dockerized-env-make -f dockerized-env/Dockerfile . && \
-        docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock dockerized-env-make
-```
 
 ### To run it in a virtual machine or workstation :computer:
 - `make` (Check that `make --version` in your terminal outputs something like `GNU Make 4.X [...]`)
 - `python3.8` or higher (Check that `python3 --version` in your terminal outputs something like `Python 3.X.X`)
 - `pip3` (Check that `pip3 --version` in your terminal outputs something like `pip 20.X.X from [...] (python 3.X)` which points to previous installation of python3.8)
 - `docker` (Check that  `docker run hello-world` works)
-- A [docker hub](https://hub.docker.com/) account. Set your password in a file named `dockerHubPassword` in the root of the project
-- A [PyPI](https://pypi.org/) account. Create a [.pypirc file](https://packaging.python.org/en/latest/specifications/pypirc/) in the root of the project with your credentials
 
-To run the project you should do:
+## How to run it :gear:
+
+1. Change the name of the user for dockerhub `kctest2` by the name of your own user in `Makefile`
+1. Set just the password for your dockerhub account in a file named `dockerHubPassword` in the root of the project
+1. Create a [.pypirc file with the standard format](https://packaging.python.org/en/latest/specifications/pypirc/) in the root of the project with your credentials to Pypi
+
+![Configuration Aid](./ConfigurationAid.png)
+
+### To run it with docker :whale: (Recommended)
+```bash
+    docker build -t dockerized-env-make -f dockerized-env/Dockerfile . && \
+        docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock dockerized-env-make
+```
+
+### To run it in your virtual-machine or workstation
 ```bash
     make
 ```

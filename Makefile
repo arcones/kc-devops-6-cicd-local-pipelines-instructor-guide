@@ -10,6 +10,7 @@ all: clean build unit-test coverage version package publish dockerize docker-log
 clean:
 	@echo CLEAN STEP
 	find python-example-app -type d -name '*cache*' -exec rm -rf {} +
+	find python-example-app -type d -name '*.egg-info' -exec rm -rf {} +
 	find python-example-app -type f -name '*pyc' -delete
 	cd python-example-app && rm -rf src/tests/.coverage src/example-app.egg-info dist
 	docker rmi kctest2/example-app-image --force
