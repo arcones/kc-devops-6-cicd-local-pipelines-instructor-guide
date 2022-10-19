@@ -27,13 +27,13 @@ Resources :books: to guide the training ***Development Lifecycle: CI/CD*** from 
 
 ### To run it with docker :whale: (Recommended)
 ```bash
-    docker build -t dockerized-env-make -f dockerized-env/Dockerfile . && \
-        docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock dockerized-env-make
+docker build -t dockerized-env-make -f dockerized-env/Dockerfile . && \
+    docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock dockerized-env-make
 ```
 
 ### To run it in your virtual-machine or workstation
 ```bash
-    make
+make
 ```
 
 ## Instructor script :shipit:
